@@ -1,7 +1,7 @@
-import { createSignal } from 'solid-js';
+import { ChildrenReturn, createSignal } from 'solid-js';
 import './Counter.css';
 
-export default function Counter({ children }) {
+export default function Counter({ children }: { children: ChildrenReturn }) {
 	const [count, setCount] = createSignal(0);
 	const add = () => setCount(count() + 1);
 	const subtract = () => setCount(count() - 1);
