@@ -1,0 +1,10 @@
+version: 0.1
+cli:
+  version: 0.17.0-beta
+plugins:
+  sources:
+    - id: trunk
+      ref: v0.0.3
+      uri: https://github.com/trunk-io/plugins
+lint:
+  enabled:
